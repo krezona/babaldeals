@@ -1,0 +1,68 @@
+.heroSecondContainer {
+  width: 1280px;
+  height: 900px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0;
+  /* position: absolute; */
+}
+
+.heroSecondContainerFirst {
+  width: 1280px;
+  height: 230px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 81, 47, 0.5) 0%,
+    rgba(240, 152, 25, 0.5) 100%
+  );
+}
+
+.heroSecondContainerSecond {
+  width: 1140px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex;
+  align-items: center;
+  gap: 53px; */
+}
+
+.heroSecondContainerSecondTop {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.heroSecondContainerSecondBottom {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  margin: 0;
+  padding: 0;
+}
+
+.heroSecondImageContainer {
+  width: 245px;
+  height: 347px;
+  border-radius: 12px;
+  background-color: #ffe8d4;
+}
+
+.heroSecondImage {
+  width: 245px;
+  height: 241px;
+  object-fit: fill;
+  margin: 0;
+  padding: 0;
+}

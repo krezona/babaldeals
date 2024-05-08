@@ -1,0 +1,36 @@
+.heroThird {
+  width: 1140px;
+  height: 323px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  /* position: absolute; */
+}
+
+.heroThirdCarousel {
+  width: 1140px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.heroThirdCarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.heroThirdImageContainer {
+  width: 212px;
+  height: 260px;
+  background-color: #ffe8d4;
+  border-radius: 12px;
+}
+
+.heroThirdImage {
+  width: 212px;
+  height: 201px;
+  margin: 0;
+  padding: 0;
+  object-fit: fill;
+}
