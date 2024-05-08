@@ -15,7 +15,7 @@ import CB_3 from "../../Images/cb-3.png";
 import CB_4 from "../../Images/cb-4.png";
 import CB_5 from "../../Images/cb-5.png";
 import CB_6 from "../../Images/cb-6.png";
-
+//just checking
 const Cart = () => {
   const cartImages = [
     {
