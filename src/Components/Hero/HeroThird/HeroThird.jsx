@@ -5,7 +5,7 @@ import New_Arrival_2 from "../../../Images/new_arrival_2.png";
 import New_Arrival_3 from "../../../Images/new_arrival_3.png";
 import New_Arrival_4 from "../../../Images/new_arrival_4.png";
 import New_Arrival_5 from "../../../Images/Hoody.png";
-
+import { Link } from "react-router-dom";
 
 const HeroThird = () => {
   const Images = [
@@ -50,23 +50,25 @@ const HeroThird = () => {
           Popular Categories
         </p>
         <div className="heroThirdCarousel">
-          {Images.map((Images) => (
-            <div key={Images.id} className="heroThirdImageContainer">
-              <img src={Images.url} className="heroThirdImage" />
-              <p
-                style={{
-                  fontSize: "16px",
-                  fontWeight: "400",
-                  color: "#000000",
-                  padding: "0",
-                  margin: "0",
-                  paddingTop: "20px",
-                  textAlign: "center",
-                }}
-              >
-                {Images.title}
-              </p>
-            </div>
+          {Images.map((Image) => (
+            <Link  key={Image.id} to="/cart">
+              <div key={Image.id} className="heroThirdImageContainer">
+                <img src={Image.url} className="heroThirdImage" />
+                <p
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    color: "#000000",
+                    padding: "0",
+                    margin: "0",
+                    paddingTop: "20px",
+                    textAlign: "center",
+                  }}
+                >
+                  {Image.title}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

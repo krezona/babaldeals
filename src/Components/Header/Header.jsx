@@ -9,8 +9,8 @@ import Cart_icon from "../../Images/cart_icon.png";
 const Header = () => {
   return (
     <div className="container">
-      <div className=" headerContainer">
-        <div className="headerContainerFirst inter">
+      <div className=" headerContainer inter">
+        <div className="headerContainerFirst ">
           <div className="headerContainerFirstLeft">
             <img className="headerIcon" src={Shopping_icon} alt="" />
             <p
@@ -55,6 +55,7 @@ const Header = () => {
               cursor: "pointer",
               padding: "0",
               margin: "0",
+              fontFamily: "Inter",
             }}
           >
             Home

@@ -15,6 +15,7 @@ import CB_3 from "../../Images/cb-3.png";
 import CB_4 from "../../Images/cb-4.png";
 import CB_5 from "../../Images/cb-5.png";
 import CB_6 from "../../Images/cb-6.png";
+import Rating_Star from "../../Images/yellow-start.png";
 //just checking
 const Cart = () => {
   const cartImages = [
@@ -43,41 +44,47 @@ const Cart = () => {
       title: "Air Force 1 Shoe for Men",
       price: "Rs. 999",
       pastprice: "Rs. 1999",
+      discount: "-50%",
     },
     {
       id: 2,
       url: CB_2,
-      title: "Air Force 1 Shoe for Men",
+      title: "Goldstar Sport Shoes",
       price: "Rs. 999",
       pastprice: "Rs. 1999",
+      discount: "-50%",
     },
     {
       id: 3,
       url: CB_3,
-      title: "Air Force 1 Shoe for Men",
+      title: "Nike Basketball Shoe",
       price: "Rs. 999",
       pastprice: "Rs. 1999",
+      discount: "-50%",
     },
     {
       id: 4,
       url: CB_4,
-      title: "Air Force 1 Shoe for Men",
+      title: "Nike Impact Shoe",
       price: "Rs. 999",
       pastprice: "Rs. 1999",
+      discount: "-50%",
     },
     {
       id: 5,
       url: CB_5,
-      title: "Air Force 1 Shoe for Men",
+      title: "Nike Air Max 270",
       price: "Rs. 999",
       pastprice: "Rs. 1999",
+      discount: "-50%",
     },
     {
       id: 6,
       url: CB_6,
-      title: "Air Force 1 Shoe for Men",
+      title: "Goldstar Sport Shoes",
       price: "Rs. 999",
       pastprice: "Rs. 1999",
+      discount: "-50%",
     },
   ];
 
@@ -291,6 +298,212 @@ const Cart = () => {
               </p>
             </div>
           </div>
+          <div className="cartContainerRightBottom">
+            <div className="cartContainerRightBottomFirst">
+              <div className="cartContainerRightBottomFirstLeft">
+                <p
+                  style={{
+                    fontSize: "28px",
+                    fontWeight: "500",
+                    width: "262px",
+                    marginBottom: "16px",
+                  }}
+                >
+                  Rating and Reviews
+                </p>
+                <p
+                  style={{
+                    fontSize: "28px",
+                    fontWeight: "500",
+                    marginBottom: "8px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                  }}
+                >
+                  4.1
+                  <button
+                    style={{
+                      width: "117px",
+                      height: "28px",
+                      backgroundColor: "#FA902D",
+                      color: "white",
+                      border: "none",
+                      outline: "none",
+                      borderRadius: "8px",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "4px",
+                      fontSize: "16px",
+                      fontWeight: "400",
+                    }}
+                  >
+                    <img
+                      src={Star_icon}
+                      style={{
+                        marginLeft: "12px",
+                        width: "20px",
+                        height: "20px",
+                      }}
+                    />
+                    Excellent
+                  </button>
+                </p>
+                <p>61 ratings and 3 reviews</p>
+              </div>
+              <div className="cartContainerRightBottomFirstCenter"></div>
+              <div className="cartContainerRightBottomFirstRight">
+                <div className="cartContainerRightBottomFirstRightRating">
+                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  </div>
+                  <p className="RatingStarText">(28)</p>
+                </div>
+                <div className="cartContainerRightBottomFirstRightRating">
+                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  </div>
+                  <p className="RatingStarText">(03)</p>
+                </div>
+                <div className="cartContainerRightBottomFirstRightRating">
+                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  </div>
+                  <p className="RatingStarText">(48)</p>
+                </div>
+                <div className="cartContainerRightBottomFirstRightRating">
+                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  </div>
+                  <p className="RatingStarText">(18)</p>
+                </div>
+                <div className="cartContainerRightBottomFirstRightRating">
+                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                    <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  </div>
+                  <p className="RatingStarText">(21)</p>
+                </div>
+              </div>
+            </div>
+            <div className="cartContainerRightBottomSecond">
+              <div className="cartContainerRightBottomSecondRating">
+                <div className="cartContainerRightBottomSecondRatingStars">
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                </div>
+                <p className="cartContainerRightBottomSecondRatingStarsText">
+                  Sushant Ghimire
+                </p>
+              </div>
+              <div className="cartContainerRightBottomSecondRatingDescription">
+                damn good product paisa anusaar ekdum wasul cha silai cha shoes
+                ma babbal ramro cha quality first class cha box bhitra euta
+                ramro jhola pani cha totally premium quality worth the price
+                thanks to jutta Ghar Nepal keep going 5 star rated shoes
+              </div>
+              <div className="cartContainerRightBottomSecondRatingImages">
+                {cartImages.map((cartImages) => (
+                  <div className="cartContainerRightBottomSecondRatingImagesContainer">
+                    <img src={cartImages.url} className="reviewImages" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="cartContainerRightBottomSecond">
+              <div className="cartContainerRightBottomSecondRating">
+                <div className="cartContainerRightBottomSecondRatingStars">
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                </div>
+                <p className="cartContainerRightBottomSecondRatingStarsText">
+                  Sushant Sedhai
+                </p>
+              </div>
+              <div className="cartContainerRightBottomSecondRatingDescription">
+                Tyo product is quite good. Recieved it on time. The quality of
+                the shoes is great for its price.
+              </div>
+              <div className="cartContainerRightBottomSecondRatingImages">
+                {cartImages.map((cartImages) => (
+                  <div className="cartContainerRightBottomSecondRatingImagesContainer">
+                    <img src={cartImages.url} className="reviewImages" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="cartContainerRightBottomSecond">
+              <div className="cartContainerRightBottomSecondRating">
+                <div className="cartContainerRightBottomSecondRatingStars">
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                </div>
+                <p className="cartContainerRightBottomSecondRatingStarsText">
+                  Aashish Shrestha
+                </p>
+              </div>
+              <div className="cartContainerRightBottomSecondRatingDescription">
+                best product for this price range. Yesto sasto ma ramro quality
+                ani ajjai tah jhola ko quality vane pani ekdam ramro. Keii na
+                sochera siddhai kine huncha haii.
+              </div>
+              <div className="cartContainerRightBottomSecondRatingImages">
+                {cartImages.map((cartImages) => (
+                  <div className="cartContainerRightBottomSecondRatingImagesContainer">
+                    <img src={cartImages.url} className="reviewImages" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="cartContainerRightBottomSecond">
+              <div className="cartContainerRightBottomSecondRating">
+                <div className="cartContainerRightBottomSecondRatingStars">
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                  <img className="RatingStarImage" src={Rating_Star} alt="" />
+                </div>
+                <p className="cartContainerRightBottomSecondRatingStarsText">
+                  Aashish Shrestha
+                </p>
+              </div>
+              <div className="cartContainerRightBottomSecondRatingDescription">
+                damn good product paisa anusaar ekdum wasul cha silai cha shoes
+                ma babbal ramro cha quality first class cha box bhitra euta
+                ramro jhola pani cha totally premium quality worth the price
+                thanks to jutta Ghar Nepal keep going 5 star rated shoes
+              </div>
+              <div className="cartContainerRightBottomSecondRatingImages">
+                {cartImages.map((cartImages) => (
+                  <div className="cartContainerRightBottomSecondRatingImagesContainer">
+                    <img src={cartImages.url} className="reviewImages" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="cartContainerBottom">
@@ -308,11 +521,22 @@ const Cart = () => {
           Similar Product
         </div>
         <div className="cartContainerBottomSecond">
-        {SimilarImages.map((SimilarImages) => (
-          <div className="cartContainerBottomImageContainer">
-            <img src={SimilarImages.url} alt="" />
-          </div>
-        ))}
+          {SimilarImages.map((SimilarImages) => (
+            <div className="cartContainerBottomImageContainer">
+              <img src={SimilarImages.url} alt="" />
+              <p className="cartContainerBottomImageContainerTitle">
+                {SimilarImages.title}
+              </p>
+              <p className="cartContainerBottomImageContainerPrice">
+                {SimilarImages.price}
+              </p>
+              <p className="cartContainerBottomImageContainerPastPrice">
+                <del>{SimilarImages.pastprice}</del>
+
+                <span>{SimilarImages.discount}</span>
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

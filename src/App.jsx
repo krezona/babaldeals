@@ -6,18 +6,22 @@ import HeroFourth from "./Components/Hero/HeroFourth/HeroFourth";
 import HeroSecond from "./Components/Hero/HeroSecond/HeroSecond";
 import HeroThird from "./Components/Hero/HeroThird/HeroThird";
 import Cart from "./Pages/Cart/Cart";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+
+
 function App() {
   return (
     <>
       <div>
-        {/* <Header />
-        <HeroFirst />
-        <HeroSecond />
-        <HeroThird />
-        <HeroFourth />
-        <Footer /> */}
-        <Header />
-        <Cart />
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
       </div>
     </>
   );
