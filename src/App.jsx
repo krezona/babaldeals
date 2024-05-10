@@ -5,10 +5,12 @@ import HeroFirst from "./Components/Hero/HeroFirst/HeroFirst";
 import HeroFourth from "./Components/Hero/HeroFourth/HeroFourth";
 import HeroSecond from "./Components/Hero/HeroSecond/HeroSecond";
 import HeroThird from "./Components/Hero/HeroThird/HeroThird";
-import Cart from "./Pages/Cart/Cart";
+import Product from "./Pages/Product/Product";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-
+import ScrollToTop from "./Components/ScrollOnTop/ScrollOnTop";
+import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/SignUp/SignUp";
 
 function App() {
   return (
@@ -16,9 +18,12 @@ function App() {
       <div>
         <BrowserRouter>
           <Header />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
           </Routes>
           <Footer />
         </BrowserRouter>
