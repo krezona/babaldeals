@@ -11,6 +11,7 @@ import Home from "./Pages/Home";
 import ScrollToTop from "./Components/ScrollOnTop/ScrollOnTop";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
+import Buynow from "./Pages/Buynow/Buynow";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/buynow" element={<Buynow />} />
           </Routes>
           <Footer />
         </BrowserRouter>

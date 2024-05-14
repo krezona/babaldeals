@@ -1,0 +1,101 @@
+.buynowContainer {
+  width: 1140px;
+  height: 659px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buynowContainerLeft {
+  width: 367px;
+  height: 659px;
+  margin: 0;
+  padding: 0;
+}
+
+.buynowContainerLeftFirst {
+  width: 367px;
+  height: 426px;
+  border-radius: 12px;
+}
+
+.butnowContainerLeftSecond {
+  width: 367px;
+  height: 213px;
+}
+
+.butnowContainerLeftSecond p {
+  margin: 0;
+  padding: 0;
+}
+
+.buynowContainerLeftSecondTop {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  width: 335px;
+}
+
+.buynowContainerLeftSecondTopTitlePrice {
+  width: 335px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  gap: 92px;
+  margin-bottom: 8px;
+}
+
+.buynowContainerLeftSecondTopTitle {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  width: 180px;
+  height: 19px;
+}
+
+.buynowContainerLeftSecondTopPrice {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  height: 19px;
+  width: 63px;
+}
+
+.buynowContainerLeftSecondBottom {
+  width: 335px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.buynowButton {
+  width: 335px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffad61;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.buynowContainerRight {
+  width: 753px;
+  height: 659px;
+  overflow-y: scroll;
+}
+
+.buynowContainerRight::-webkit-scrollbar {
+  display: none;
+}

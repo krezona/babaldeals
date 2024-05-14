@@ -28,7 +28,7 @@
 
 .signupContainerRight {
   width: 560px;
-  height: 697px;
+  height: 698px;
   overflow-y: scroll;
   border-radius: 12px;
   background-color: #ffe8d4;
@@ -41,7 +41,6 @@
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 40px;
-  background-color: aqua;
   width: 528px;
   /* height: 657px; */
 }
@@ -53,4 +52,62 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.signupContainerRightSecond {
+  margin: 0;
+  padding: 0;
+  width: 518px;
+  /* height: 466px; */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signupIcons {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  /* margin-right: 8px; */
+}
+
+.signupIconsDetails {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.signupInput {
+  width: 518px;
+  height: 48px;
+  background-color: #ffe8d4;
+  border: 1px solid #878787;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.signupButton {
+  width: 360px;
+  height: 48px;
+  background-color: #ffad61;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 79px;
+  margin-top: 24px;
+  cursor: pointer;
+  margin-bottom: 40px;
 }
