@@ -5,6 +5,7 @@ import Logo from "../../Images/babaldeals_logo.jpg";
 import GP from "../../Images/footer-gp.png";
 import AP from "../../Images/footer-as.png";
 import GET from "../../Images/download.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -47,11 +48,24 @@ const Footer = () => {
           >
             Help
           </span>
-          <ul style={{ padding: "0", margin: "0", listStyleType: "none", width:"219px" }}>
+          <ul
+            style={{
+              padding: "0",
+              margin: "0",
+              listStyleType: "none",
+              width: "219px",
+            }}
+          >
             <li className="footerList" style={{ marginTop: "16px" }}>
               Help Center
             </li>
-            <li className="footerList">Delvieries and return policies</li>
+            <Link
+              to="/privacypolicy"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              
+              <li className="footerList">Deliveries and return policies</li>
+            </Link>
             <li className="footerList">Terms and Conditions</li>
             <li className="footerList">FAQs</li>
           </ul>
@@ -68,10 +82,20 @@ const Footer = () => {
             Company
           </span>
           <ul style={{ padding: "0", margin: "0", listStyleType: "none" }}>
-            <li className="footerList" style={{ marginTop: "16px" }}>
-              About us
-            </li>
-            <li className="footerList">Contact us</li>
+            <Link
+              to="/aboutus"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <li className="footerList" style={{ marginTop: "16px" }}>
+                About us
+              </li>
+            </Link>
+            <Link
+              to="/contactus"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <li className="footerList">Contact us</li>
+            </Link>
             <li className="footerList">News</li>
             <li className="footerList">Support</li>
           </ul>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Product.css";
+import "./Productdetails.css";
 import Cart_first from "../../Images/cart_1.png";
 import CI_1 from "../../Images/ci-1.png";
 import CI_2 from "../../Images/ci-2.png";
