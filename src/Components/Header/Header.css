@@ -33,35 +33,52 @@
 }
 
 .dropdownContent {
+  display: none;
+  width: 249px;
+  /* height: 240px; */
   position: absolute;
   top: 48px;
   left: 0;
-  background-color: white;
-  /* width: 235px; */
-  width: 180px;
-  /* height: 344px; */
+  background-color: #ffe2c7;
   border-radius: 8px;
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9); */
   z-index: 1;
+  border-radius: 12px;
 }
 
 .dropdownContent ul {
   list-style: none;
   padding: 0;
-  margin: 10px;
+  margin: 10px 0 0 10px;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdownContent ul li {
+  width: 249px;
+  height: 48px;
   font-size: 16px;
-  padding: 8px 16px;
+  font-weight: 400;
+  font-family: "Inter";
+  /* padding: 8px 16px; */
   cursor: pointer;
   font-family: "Inter";
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
+  /* margin: 0; */
+  list-style-position: inside;
 }
 
-/* .dropdownContent ul li:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-} */
+.headerContainerFirstRight:hover .dropdownContent {
+  display: block;
+}
 
 .headerContainerSecond {
   position: relative;
@@ -83,12 +100,17 @@
   height: 24px;
   margin: 0;
   padding: 0;
+  transition: transform 0.3s ease; /* Add transition property */
+}
+
+.headerButton:hover .headerIcon {
+  transform: rotate(180deg);
 }
 
 .headerButton {
   width: 148px;
   height: 48px;
-  background-color: #ffe2c7;
+  background-color: #ffc690;
   font-size: 16px;
   font-weight: 400;
   border-radius: 8px;

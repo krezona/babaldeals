@@ -8,7 +8,7 @@ import HeroThird from "./Components/Hero/HeroThird/HeroThird";
 import ProductDetails from "./Pages/Productdetails/Productdetails";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import ScrollToTop from "./Components/ScrollOnTop/ScrollOnTop";
+import ScrollOnTop from "./Components/ScrollOnTop/ScrollOnTop";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
 import Buynow from "./Pages/Buynow/Buynow";
@@ -16,6 +16,9 @@ import Productpage from "./Pages/Productpage/Productpage";
 import Contactus from "./Pages/Contactus/Contactus";
 import Aboutus from "./Pages/Aboutus/Aboutus";
 import Privacypolicy from "./Pages/Privacypolicy/Privacypolicy";
+import Termsandconditions from "./Pages/Termsandconditions/Termsandconditions";
+import Helpcenter from "./Pages/Helpcenter/Helpcenter";
+import Cart from "./Pages/Cart/Cart";
 
 function App() {
   return (
@@ -23,7 +26,7 @@ function App() {
       <div>
         <BrowserRouter>
           <Header />
-          <ScrollToTop />
+          <ScrollOnTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/productdetails" element={<ProductDetails />} />
@@ -34,6 +37,12 @@ function App() {
             <Route path="/contactus" element={<Contactus />} />
             <Route path="/aboutus" element={<Aboutus />} />
             <Route path="/privacypolicy" element={<Privacypolicy />} />
+            <Route
+              path="/termsandconditions"
+              element={<Termsandconditions />}
+            />
+            <Route path="/helpcenter" element={<Helpcenter />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
           <Footer />
         </BrowserRouter>

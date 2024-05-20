@@ -97,8 +97,8 @@
 .heroFirstButton {
   width: 227px;
   height: 56px;
-  background-color: #000000;
-  color: white;
+  background-color: #FFC690;
+  color: #000000;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -108,4 +108,8 @@
   outline: none;
   cursor: pointer;
   border-radius: 6px;
+}
+
+.heroFirstButton:hover {
+  background-color: white;
 }

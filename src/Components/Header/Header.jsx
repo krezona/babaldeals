@@ -8,38 +8,43 @@ import User_icon from "../../Images/User_alt_light.png";
 import Cart_icon from "../../Images/cart_icon.png";
 import { useState } from "react";
 import { useRef } from "react";
+import Menufirst from "../../Images/menu-1.png";
+import MenuSecond from "../../Images/a-tracksuit-.png";
+import MenuThird from "../../Images/world_alt_light.png";
+import MenuFourth from "../../Images/Basket_alt_3.png";
+import MenuFifth from "../../Images/desktop_light.png";
 
 const Header = () => {
   const [showCategories, setShowCategories] = useState(false);
   const dropdownRef = useRef(null);
 
-  const handleCategoriesClick = () => {
-    setShowCategories(!showCategories);
-  };
+  // const handleCategoriesClick = () => {
+  //   setShowCategories(!showCategories);
+  // };
 
-  const handleCategoriesMouseEnter = () => {
-    setShowCategories(true);
-  };
+  // const handleCategoriesMouseEnter = () => {
+  //   setShowCategories(true);
+  // };
 
-  const handleCategoriesMouseLeave = () => {
-    // setShowCategories(false);
-    // if (!dropdownRef.current.contains(document.activeElement)) {
-    //   setShowCategories(false);
-    // }
+  // const handleCategoriesMouseLeave = () => {
+  //   // setShowCategories(false);
+  //   // if (!dropdownRef.current.contains(document.activeElement)) {
+  //   //   setShowCategories(false);
+  //   // }
 
-    // if (!dropdownRef.current.contains(e.relatedTarget)) {
-    //   setShowCategories(false);
-    // }
+  //   // if (!dropdownRef.current.contains(e.relatedTarget)) {
+  //   //   setShowCategories(false);
+  //   // }
 
-    const isMouseOutsideButton = !e.currentTarget.contains(e.relatedTarget);
-    const isMouseOutsideDropdown = !dropdownRef.current.contains(
-      e.relatedTarget
-    );
+  //   const isMouseOutsideButton = !e.currentTarget.contains(e.relatedTarget);
+  //   const isMouseOutsideDropdown = !dropdownRef.current.contains(
+  //     e.relatedTarget
+  //   );
 
-    if (isMouseOutsideButton && isMouseOutsideDropdown) {
-      setShowCategories(false);
-    }
-  };
+  //   if (isMouseOutsideButton && isMouseOutsideDropdown) {
+  //     setShowCategories(false);
+  //   }
+  // };
 
   return (
     <div className="container">
@@ -63,9 +68,9 @@ const Header = () => {
           </Link>
           <div className="headerContainerFirstRight">
             <button
-              onClick={handleCategoriesClick}
-              onMouseEnter={handleCategoriesMouseEnter}
-              onMouseLeave={handleCategoriesMouseLeave}
+              // onClick={handleCategoriesClick}
+              // onMouseEnter={handleCategoriesMouseEnter}
+              // onMouseLeave={handleCategoriesMouseLeave}
               className="headerButton"
               style={{
                 display: "flex",
@@ -76,16 +81,37 @@ const Header = () => {
               Categories
               <img className="headerIcon" src={Arrow_down_icon} alt="" />
             </button>
-            {showCategories && (
-              <div className="dropdownContent" ref={dropdownRef}>
-                <ul>
-                  <li>Clothing</li>
-                  <li>Watches</li>
-                  <li>Sunglasses</li>
-                  <li>Gifts</li>
-                </ul>
-              </div>
-            )}
+            {/* {showCategories && ( */}
+            <div className="dropdownContent" ref={dropdownRef}>
+              <ul>
+                <li>
+                  
+                  <img  className="menuIcon" src={Menufirst} alt="" />
+                  Women's Clothing
+                </li>
+                <li>
+                  
+                  <img  className="menuIcon" src={MenuSecond} alt="" />
+                  Men's Clothing
+                </li>
+                <li>
+                 
+                  <img  className="menuIcon" src={MenuThird} alt="" />
+                  Sports
+                </li>
+                <li>
+                 
+                  <img  className="menuIcon" src={MenuFourth} alt="" />
+                  Groceries
+                </li>
+                <li>
+                  
+                  <img  className="menuIcon" src={MenuFifth} alt="" />
+                  Electronic appliances
+                </li>
+              </ul>
+            </div>
+            {/* )} */}
           </div>
         </div>
         <div className="headerContainerSecond inter">

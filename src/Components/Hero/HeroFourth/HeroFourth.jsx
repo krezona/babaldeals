@@ -30,7 +30,7 @@ const HeroFourth = () => {
                 padding: "0",
                 width: "404px",
                 height: "48px",
-                fontSize: "20px",
+                fontSize: "18px",
                 fontWeight: "400",
                 color: "#605050",
               }}
@@ -64,22 +64,8 @@ const HeroFourth = () => {
             >
               Dashaindeal
             </p>
-            <button
-              style={{
-                margin: "0",
-                padding: "0",
-                width: "147px",
-                height: "51px",
-                border: "none",
-                borderRadius: "8px",
-                backgroundColor: "#FFE2C7",
-                outline: "none",
-                cursor: "pointer",
-                fontSize: "16px",
-                fontWeight: "500",
-                color: "#46474B",
-                textAlign: "center",
-              }}
+            <button className="startshoppingButton"
+            
             >
               Start Shopping
             </button>
@@ -106,7 +92,7 @@ const HeroFourth = () => {
               </p>
               <p
                 style={{
-                  fontSize: "20px",
+                  fontSize: "18px",
                   fontWeight: "400",
                   margin: "0",
                   padding: "0",
@@ -156,7 +142,7 @@ const HeroFourth = () => {
               </p>
               <p
                 style={{
-                  fontSize: "20px",
+                  fontSize: "18px",
                   fontWeight: "400",
                   margin: "0",
                   padding: "0",

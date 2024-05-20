@@ -1,0 +1,72 @@
+.helpcenterContainer {
+  width: 1140px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.helpcenterTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  margin-left: 16px;
+}
+
+.helpcenterDescription {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 24.2px;
+  margin-left: 16px;
+}
+
+.helpcenterContainerFirst {
+  width: 1140px;
+  height: 124px;
+  border-radius: 12px;
+  background-color: #ffe8d4;
+  margin-bottom: 20px;
+}
+
+.helpcenterContainerSecond {
+  width: 1140px;
+  height: 116px;
+  border-radius: 12px;
+  background-color: #ffe8d4;
+  margin-bottom: 20px;
+}
+
+.helpcenterContainerThird {
+  width: 1140px;
+  height: 140px;
+  border-radius: 12px;
+  background-color: #ffe8d4;
+  margin-bottom: 20px;
+}
+
+.helpcenterContainerFourth {
+  width: 1140px;
+  height: 92px;
+  border-radius: 12px;
+  background-color: #ffe8d4;
+  margin-bottom: 20px;
+}
+
+.helpcenterContainerFifth{
+  width: 1140px;
+  height: 92px;
+  border-radius: 12px;
+  background-color: #ffe8d4;
+  margin-bottom: 20px;
+}
+
+.helpcenterContainerSixth{
+  width: 1140px;
+  height: 116px;
+  border-radius: 12px;
+  background-color: #ffe8d4;
+}

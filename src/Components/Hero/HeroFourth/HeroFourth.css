@@ -6,7 +6,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
 .heroFourthContainerTop {
@@ -120,4 +120,24 @@
   position: absolute;
   right: 3px;
   top: 3px;
+}
+
+.startshoppingButton {
+  margin: 0;
+  padding: 0;
+  width: 147px;
+  height: 51px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffe2c7;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #46474b;
+  text-align: center;
+}
+
+.startshoppingButton:hover{
+  background-color: white;
 }

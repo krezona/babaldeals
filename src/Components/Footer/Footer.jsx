@@ -56,17 +56,26 @@ const Footer = () => {
               width: "219px",
             }}
           >
-            <li className="footerList" style={{ marginTop: "16px" }}>
-              Help Center
-            </li>
+            <Link
+              to="./helpcenter"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <li className="footerList" style={{ marginTop: "16px" }}>
+                Help Center
+              </li>
+            </Link>
             <Link
               to="/privacypolicy"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              
               <li className="footerList">Deliveries and return policies</li>
             </Link>
-            <li className="footerList">Terms and Conditions</li>
+            <Link
+              to="/termsandconditions"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <li className="footerList">Terms and Conditions</li>
+            </Link>
             <li className="footerList">FAQs</li>
           </ul>
         </div>

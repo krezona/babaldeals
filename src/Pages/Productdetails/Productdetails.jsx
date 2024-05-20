@@ -90,31 +90,34 @@ const Cart = () => {
 
   return (
     <div className="container">
-      <div className="cartContainerTop inter">
-        <div className="cartContainerLeft">
-          <div className="cartContainerLeftFirst">
+      <div className="productdetailContainerTop inter">
+        <div className="productdetailContainerLeft">
+          <div className="productdetailContainerLeftFirst">
             <img src={Cart_first} />
           </div>
-          <div className="cartContainerLeftSecond">
+          <div className="productdetailContainerLeftSecond">
             {cartImages.map((cartImages) => (
-              <div className="cartContainerLeftSecondImageContainer">
-                <img src={cartImages.url} className="cartLeftSecondImage" />
+              <div className="productdetailContainerLeftSecondImageContainer">
+                <img
+                  src={cartImages.url}
+                  className="productdetailLeftSecondImage"
+                />
               </div>
             ))}
           </div>
 
-          <div className="cartContainerLeftThird">
-            <button className="cartContainerLeftThirdButtonFirst">
+          <div className="productdetailContainerLeftThird">
+            <button className="productdetailContainerLeftThirdButtonFirst">
               <img
-                className="cartContainerLeftThirdButtonIcon"
+                className="productdetailContainerLeftThirdButtonIcon"
                 src={Cart_icon}
               />
               Add to Cart
             </button>
 
-            <button className="cartContainerLeftThirdButtonSecond">
+            <button className="productdetailContainerLeftThirdButtonSecond">
               <img
-                className="cartContainerLeftThirdButtonIcon"
+                className="productdetailContainerLeftThirdButtonIcon"
                 src={Buy_icon}
                 style={{ marginLeft: "35px" }}
               />
@@ -122,61 +125,69 @@ const Cart = () => {
             </button>
           </div>
 
-          <div className="cartContainerLeftFourth inter">
-            <div className="cartContainerLeftFourthTitle">Product Details</div>
+          <div className="productdetailContainerLeftFourth inter">
+            <div className="productdetailContainerLeftFourthTitle">
+              Product Details
+            </div>
 
-            <div className="cartContainerLeftFourthDescription">
-              <div className="cartContainerLeftFourthDescriptionList">
-                <p className="cartContainerLeftFourthDescriptionLeft">Colour</p>
-                <p className="cartContainerLeftFourthDescriptionRight">Blue</p>
+            <div className="productdetailContainerLeftFourthDescription">
+              <div className="productdetailContainerLeftFourthDescriptionList">
+                <p className="productdetailContainerLeftFourthDescriptionLeft">
+                  Colour
+                </p>
+                <p className="productdetailContainerLeftFourthDescriptionRight">
+                  Blue
+                </p>
               </div>
 
-              <div className="cartContainerLeftFourthDescriptionList">
-                <p className="cartContainerLeftFourthDescriptionLeft">
+              <div className="productdetailContainerLeftFourthDescriptionList">
+                <p className="productdetailContainerLeftFourthDescriptionLeft">
                   Outer Material
                 </p>
-                <p className="cartContainerLeftFourthDescriptionRight">
+                <p className="productdetailContainerLeftFourthDescriptionRight">
                   Synthetic
                 </p>
               </div>
 
-              <div className="cartContainerLeftFourthDescriptionList">
-                <p className="cartContainerLeftFourthDescriptionLeft">
+              <div className="productdetailContainerLeftFourthDescriptionList">
+                <p className="productdetailContainerLeftFourthDescriptionLeft">
                   Model Name
                 </p>
-                <p className="cartContainerLeftFourthDescriptionRight">
+                <p className="productdetailContainerLeftFourthDescriptionRight">
                   Airforce
                 </p>
               </div>
 
-              <div className="cartContainerLeftFourthDescriptionList">
-                <p className="cartContainerLeftFourthDescriptionLeft">
+              <div className="productdetailContainerLeftFourthDescriptionList">
+                <p className="productdetailContainerLeftFourthDescriptionLeft">
                   Ideal for
                 </p>
-                <p className="cartContainerLeftFourthDescriptionRight">Men</p>
+                <p className="productdetailContainerLeftFourthDescriptionRight">
+                  Men
+                </p>
               </div>
 
-              <div className="cartContainerLeftFourthDescriptionList">
-                <p className="cartContainerLeftFourthDescriptionLeft">
+              <div className="productdetailContainerLeftFourthDescriptionList">
+                <p className="productdetailContainerLeftFourthDescriptionLeft">
                   Occasion
                 </p>
-                <p className="cartContainerLeftFourthDescriptionRight">
+                <p className="productdetailContainerLeftFourthDescriptionRight">
                   Casual
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="cartContainerRight inter">
-          <div className="cartContainerRightTop">
-            <div className="cartContainerRightTopFirst">
+        <div className="productdetailContainerRight inter">
+          <div className="productdetailContainerRightTop">
+            <div className="productdetailContainerRightTopFirst">
               Casual Outdoor Shoes For Men
             </div>
-            <div className="cartContainerRightTopSecond">
+            <div className="productdetailContainerRightTopSecond">
               <img src={Star_icon} style={{ marginLeft: "8px" }} />
               4.1
             </div>
-            <div className="cartContainerRightTopThird">
+            <div className="productdetailContainerRightTopThird">
               <p
                 style={{
                   color: "#FA902D",
@@ -189,7 +200,7 @@ const Cart = () => {
               >
                 Special Price
               </p>
-              <div className="cartContainerRightTopThirdBottom">
+              <div className="productdetailContainerRightTopThirdBottom">
                 <p
                   style={{
                     fontSize: "200",
@@ -224,7 +235,7 @@ const Cart = () => {
                 </span>
               </div>
             </div>
-            <div className="cartContainerRightTopFourth">
+            <div className="productdetailContainerRightTopFourth">
               <p
                 style={{
                   color: "#FA902D",
@@ -237,29 +248,29 @@ const Cart = () => {
               >
                 Special Offers
               </p>
-              <div className="cartContainerRightTopFourthList">
+              <div className="productdetailContainerRightTopFourthList">
                 <img
-                  className="cartContainerRightTopFourthListImage"
+                  className="productdetailContainerRightTopFourthListImage"
                   src={Package_icon}
                 />
                 <p>10% discount on every purchase</p>
               </div>
-              <div className="cartContainerRightTopFourthList">
+              <div className="productdetailContainerRightTopFourthList">
                 <img
-                  className="cartContainerRightTopFourthListImage"
+                  className="productdetailContainerRightTopFourthListImage"
                   src={Package_icon}
                 />
                 <p>5% discount on payment from Khalti </p>
               </div>
-              <div className="cartContainerRightTopFourthList">
+              <div className="productdetailContainerRightTopFourthList">
                 <img
-                  className="cartContainerRightTopFourthListImage"
+                  className="productdetailContainerRightTopFourthListImage"
                   src={Package_icon}
                 />
                 <p>Buy for Rs. 10000 and get Rs. 500 off your Next Buy</p>
               </div>
             </div>
-            <div className="cartContainerRightTopFifth">
+            <div className="productdetailContainerRightTopFifth">
               <p
                 style={{
                   color: "#FA902D",
@@ -298,9 +309,9 @@ const Cart = () => {
               </p>
             </div>
           </div>
-          <div className="cartContainerRightBottom">
-            <div className="cartContainerRightBottomFirst">
-              <div className="cartContainerRightBottomFirstLeft">
+          <div className="productdetailContainerRightBottom">
+            <div className="productdetailContainerRightBottomFirst">
+              <div className="productdetailContainerRightBottomFirstLeft">
                 <p
                   style={{
                     fontSize: "28px",
@@ -351,10 +362,10 @@ const Cart = () => {
                 </p>
                 <p>61 ratings and 3 reviews</p>
               </div>
-              <div className="cartContainerRightBottomFirstCenter"></div>
-              <div className="cartContainerRightBottomFirstRight">
-                <div className="cartContainerRightBottomFirstRightRating">
-                  <div className="cartContainerRightBottomFirstRightRatingStars">
+              <div className="productdetailContainerRightBottomFirstCenter"></div>
+              <div className="productdetailContainerRightBottomFirstRight">
+                <div className="productdetailContainerRightBottomFirstRightRating">
+                  <div className="productdetailContainerRightBottomFirstRightRatingStars">
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
@@ -363,8 +374,8 @@ const Cart = () => {
                   </div>
                   <p className="RatingStarText">(28)</p>
                 </div>
-                <div className="cartContainerRightBottomFirstRightRating">
-                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                <div className="productdetailContainerRightBottomFirstRightRating">
+                  <div className="productdetailContainerRightBottomFirstRightRatingStars">
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
@@ -372,49 +383,49 @@ const Cart = () => {
                   </div>
                   <p className="RatingStarText">(03)</p>
                 </div>
-                <div className="cartContainerRightBottomFirstRightRating">
-                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                <div className="productdetailContainerRightBottomFirstRightRating">
+                  <div className="productdetailContainerRightBottomFirstRightRatingStars">
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                   </div>
                   <p className="RatingStarText">(48)</p>
                 </div>
-                <div className="cartContainerRightBottomFirstRightRating">
-                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                <div className="productdetailContainerRightBottomFirstRightRating">
+                  <div className="productdetailContainerRightBottomFirstRightRatingStars">
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                   </div>
                   <p className="RatingStarText">(18)</p>
                 </div>
-                <div className="cartContainerRightBottomFirstRightRating">
-                  <div className="cartContainerRightBottomFirstRightRatingStars">
+                <div className="productdetailContainerRightBottomFirstRightRating">
+                  <div className="productdetailContainerRightBottomFirstRightRatingStars">
                     <img className="RatingStarImage" src={Rating_Star} alt="" />
                   </div>
                   <p className="RatingStarText">(21)</p>
                 </div>
               </div>
             </div>
-            <div className="cartContainerRightBottomSecond">
-              <div className="cartContainerRightBottomSecondRating">
-                <div className="cartContainerRightBottomSecondRatingStars">
+            <div className="productdetailContainerRightBottomSecond">
+              <div className="productdetailContainerRightBottomSecondRating">
+                <div className="productdetailContainerRightBottomSecondRatingStars">
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                 </div>
-                <p className="cartContainerRightBottomSecondRatingStarsText">
+                <p className="productdetailContainerRightBottomSecondRatingStarsText">
                   Sushant Ghimire
                 </p>
               </div>
-              <div className="cartContainerRightBottomSecondRatingDescription">
+              <div className="productdetailContainerRightBottomSecondRatingDescription">
                 damn good product paisa anusaar ekdum wasul cha silai cha shoes
                 ma babbal ramro cha quality first class cha box bhitra euta
                 ramro jhola pani cha totally premium quality worth the price
                 thanks to jutta Ghar Nepal keep going 5 star rated shoes
               </div>
-              <div className="cartContainerRightBottomSecondRatingImages">
+              <div className="productdetailContainerRightBottomSecondRatingImages">
                 {cartImages.map((cartImages) => (
                   <div className="cartContainerRightBottomSecondRatingImagesContainer">
                     <img src={cartImages.url} className="reviewImages" />
@@ -423,81 +434,81 @@ const Cart = () => {
               </div>
             </div>
 
-            <div className="cartContainerRightBottomSecond">
-              <div className="cartContainerRightBottomSecondRating">
-                <div className="cartContainerRightBottomSecondRatingStars">
+            <div className="productdetailContainerRightBottomSecond">
+              <div className="productdetailContainerRightBottomSecondRating">
+                <div className="productdetailContainerRightBottomSecondRatingStars">
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                 </div>
-                <p className="cartContainerRightBottomSecondRatingStarsText">
+                <p className="productdetailContainerRightBottomSecondRatingStarsText">
                   Sushant Sedhai
                 </p>
               </div>
-              <div className="cartContainerRightBottomSecondRatingDescription">
+              <div className="productdetailContainerRightBottomSecondRatingDescription">
                 Tyo product is quite good. Recieved it on time. The quality of
                 the shoes is great for its price.
               </div>
-              <div className="cartContainerRightBottomSecondRatingImages">
+              <div className="productdetailContainerRightBottomSecondRatingImages">
                 {cartImages.map((cartImages) => (
-                  <div className="cartContainerRightBottomSecondRatingImagesContainer">
+                  <div className="productdetailContainerRightBottomSecondRatingImagesContainer">
                     <img src={cartImages.url} className="reviewImages" />
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="cartContainerRightBottomSecond">
-              <div className="cartContainerRightBottomSecondRating">
-                <div className="cartContainerRightBottomSecondRatingStars">
+            <div className="productdetailContainerRightBottomSecond">
+              <div className="productdetailContainerRightBottomSecondRating">
+                <div className="productdetailContainerRightBottomSecondRatingStars">
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                 </div>
-                <p className="cartContainerRightBottomSecondRatingStarsText">
+                <p className="productdetailContainerRightBottomSecondRatingStarsText">
                   Aashish Shrestha
                 </p>
               </div>
-              <div className="cartContainerRightBottomSecondRatingDescription">
+              <div className="productdetailContainerRightBottomSecondRatingDescription">
                 best product for this price range. Yesto sasto ma ramro quality
                 ani ajjai tah jhola ko quality vane pani ekdam ramro. Keii na
                 sochera siddhai kine huncha haii.
               </div>
-              <div className="cartContainerRightBottomSecondRatingImages">
+              <div className="productdetailContainerRightBottomSecondRatingImages">
                 {cartImages.map((cartImages) => (
-                  <div className="cartContainerRightBottomSecondRatingImagesContainer">
+                  <div className="productdetailContainerRightBottomSecondRatingImagesContainer">
                     <img src={cartImages.url} className="reviewImages" />
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="cartContainerRightBottomSecond">
-              <div className="cartContainerRightBottomSecondRating">
-                <div className="cartContainerRightBottomSecondRatingStars">
+            <div className="productdetailContainerRightBottomSecond">
+              <div className="productdetailContainerRightBottomSecondRating">
+                <div className="productdetailContainerRightBottomSecondRatingStars">
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                   <img className="RatingStarImage" src={Rating_Star} alt="" />
                 </div>
-                <p className="cartContainerRightBottomSecondRatingStarsText">
+                <p className="productdetailContainerRightBottomSecondRatingStarsText">
                   Aashish Shrestha
                 </p>
               </div>
-              <div className="cartContainerRightBottomSecondRatingDescription">
+              <div className="productdetailContainerRightBottomSecondRatingDescription">
                 damn good product paisa anusaar ekdum wasul cha silai cha shoes
                 ma babbal ramro cha quality first class cha box bhitra euta
                 ramro jhola pani cha totally premium quality worth the price
                 thanks to jutta Ghar Nepal keep going 5 star rated shoes
               </div>
-              <div className="cartContainerRightBottomSecondRatingImages">
+              <div className="productdetailContainerRightBottomSecondRatingImages">
                 {cartImages.map((cartImages) => (
-                  <div className="cartContainerRightBottomSecondRatingImagesContainer">
+                  <div className="productdetailContainerRightBottomSecondRatingImagesContainer">
                     <img src={cartImages.url} className="reviewImages" />
                   </div>
                 ))}
@@ -506,9 +517,9 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className="cartContainerBottom">
+      <div className="productdetailContainerBottom">
         <div
-          className="cartContainerBottomFirst"
+          className="productdetailContainerBottomFirst"
           style={{
             width: "207px",
             fontSize: "28px",
@@ -520,17 +531,17 @@ const Cart = () => {
         >
           Similar Product
         </div>
-        <div className="cartContainerBottomSecond">
+        <div className="productdetailContainerBottomSecond">
           {SimilarImages.map((SimilarImages) => (
-            <div className="cartContainerBottomImageContainer">
+            <div className="productdetailContainerBottomImageContainer">
               <img src={SimilarImages.url} alt="" />
-              <p className="cartContainerBottomImageContainerTitle">
+              <p className="productdetailContainerBottomImageContainerTitle">
                 {SimilarImages.title}
               </p>
-              <p className="cartContainerBottomImageContainerPrice">
+              <p className="productdetailContainerBottomImageContainerPrice">
                 {SimilarImages.price}
               </p>
-              <p className="cartContainerBottomImageContainerPastPrice">
+              <p className="productdetailContainerBottomImageContainerPastPrice">
                 <del>{SimilarImages.pastprice}</del>
 
                 <span>{SimilarImages.discount}</span>

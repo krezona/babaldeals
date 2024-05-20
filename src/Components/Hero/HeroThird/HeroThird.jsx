@@ -51,7 +51,7 @@ const HeroThird = () => {
         </p>
         <div className="heroThirdCarousel">
           {Images.map((Image) => (
-            <Link  key={Image.id} to="/product">
+            <Link  key={Image.id} to="/productdetails">
               <div key={Image.id} className="heroThirdImageContainer">
                 <img src={Image.url} className="heroThirdImage" />
                 <p
