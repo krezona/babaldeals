@@ -8,69 +8,71 @@ import New_Arrival_5 from "../../../Images/New_Arrival_5.png";
 import New_Arrival_6 from "../../../Images/New_Arrival_6.png";
 import New_Arrival_7 from "../../../Images/New_Arrival_7.png";
 import New_Arrival_8 from "../../../Images/New_Arrival_8.png";
+import heroSecondData from "../../../JsonFiles/HeroSectionSecond.json";
 
 const HeroSecond = () => {
-  const Images = [
-    {
-      id: 1,
-      url: New_Arrival_1,
-      title: "Watch",
-      price: "Rs 999",
-      pastprice: "Rs. 1999",
-    },
-    {
-      id: 2,
-      url: New_Arrival_2,
-      title: "School Bag",
-      price: "Rs 4999",
-      pastprice: "Rs 6880",
-    },
-    {
-      id: 3,
-      url: New_Arrival_3,
-      title: "Airpods",
-      price: "Rs 4000",
-      pastprice: "Rs 8000",
-    },
-    {
-      id: 4,
-      url: New_Arrival_4,
-      title: "Vape",
-      price: "Rs 4999",
-      pastprice: "Rs 6890",
-    },
-  ];
-
-  const images = [
-    {
-      id: 5,
-      url: New_Arrival_5,
-      title: "Purse",
-      price: "Rs. 999",
-      pastprice: "Rs 999",
-    },
-    {
-      id: 6,
-      url: New_Arrival_6,
-      title: "T-Shirt",
-      price: "Rs. 999",
-      pastprice: "Rs. 1999",
-    },
-    {
-      id: 7,
-      url: New_Arrival_7,
-      title: "Shoes",
-      price: "Rs. 2000",
-      pastprice: "Rs. 2500",
-    },
-    {
-      id: 8,
-      url: New_Arrival_8,
-      title: "Jacket",
-      price: "Rs. 4000",
-      pastprice: "Rs. 8000",
-    },
-  ];
+  // const Images = [
+  //   {
+  //     id: 1,
+  //     url: New_Arrival_1,
+  //     title: "Watch",
+  //     price: "Rs 999",
+  //     pastprice: "Rs. 1999",
+  //   },
+  //   {
+  //     id: 2,
+  //     url: New_Arrival_2,
+  //     title: "School Bag",
+  //     price: "Rs 4999",
+  //     pastprice: "Rs 6880",
+  //   },
+  //   {
+  //     id: 3,
+  //     url: New_Arrival_3,
+  //     title: "Airpods",
+  //     price: "Rs 4000",
+  //     pastprice: "Rs 8000",
+  //   },
+  //   {
+  //     id: 4,
+  //     url: New_Arrival_4,
+  //     title: "Vape",
+  //     price: "Rs 4999",
+  //     pastprice: "Rs 6890",
+  //   },
+  // ];
+  const Images = heroSecondData.heroSecondImages.slice(0,4);
+  const images = heroSecondData.heroSecondImages.slice(4,8);
+  // const images = [
+  //   {
+  //     id: 5,
+  //     url: New_Arrival_5,
+  //     title: "Purse",
+  //     price: "Rs. 999",
+  //     pastprice: "Rs 999",
+  //   },
+  //   {
+  //     id: 6,
+  //     url: New_Arrival_6,
+  //     title: "T-Shirt",
+  //     price: "Rs. 999",
+  //     pastprice: "Rs. 1999",
+  //   },
+  //   {
+  //     id: 7,
+  //     url: New_Arrival_7,
+  //     title: "Shoes",
+  //     price: "Rs. 2000",
+  //     pastprice: "Rs. 2500",
+  //   },
+  //   {
+  //     id: 8,
+  //     url: New_Arrival_8,
+  //     title: "Jacket",
+  //     price: "Rs. 4000",
+  //     pastprice: "Rs. 8000",
+  //   },
+  // ];
 
   return (
     <div className="container">
@@ -87,7 +89,8 @@ const HeroSecond = () => {
               marginBottom: "8px",
             }}
           >
-            New Arrivals
+            {/* New Arrivals */}
+            {heroSecondData.heroSecondText.heroTitle}
           </p>
           <p
             style={{
@@ -98,11 +101,16 @@ const HeroSecond = () => {
               textAlign: "center",
             }}
           >
-            Lorem Ipsum is simply dummy text of the printing and type setting
-            industry.
+            {/* Lorem Ipsum is simply dummy text of the printing and type setting
+            industry. */}
+            {heroSecondData.heroSecondText.heroDescription}
           </p>
           <div className="heroSecondContainerSecond inter">
             <div className="heroSecondContainerSecondTop">
+
+
+
+
               {Images.map((Images) => (
                 <div key={Images.id} className="heroSecondImageContainer">
                   <img src={Images.url} className="heroSecondImage" />

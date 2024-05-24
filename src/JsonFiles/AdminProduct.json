@@ -1,0 +1,36 @@
+{
+  "images": [
+    {
+      "id": "1",
+      "url": "./Images/shoes.png",
+      "title": "Nike",
+      "description": "Air Force 1 Shoe for Men",
+      "price": "Rs 999",
+      "classname": "adminProductTopImages"
+    },
+    {
+      "id": "2",
+      "url": "./Images/addidasshoes.png",
+      "title": "Adidas",
+      "description": "Addidas Shoes For Men",
+      "price": "Rs 999",
+      "classname": "adminProductTopImages"
+    },
+    {
+      "id": "3",
+      "url": "./Images/pumashoes.png",
+      "title": "Puma",
+      "description": "Puma Shoes For Men",
+      "price": "Rs 999",
+      "classname": "adminProductTopImages"
+    },
+
+    {
+      "id": "4",
+      "url": "./Images/nikeair.png",
+      "price": "Rs 1999",
+      "available": "234",
+      "sold": "299"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import "./HeroFirst.css";
 import Shoes_icon from "../../../Images/shoes.png";
 import Like_icon from "../../../Images/thumb_up.png";
 import Jacket_icon from "../../../Images/Jacket.png";
+import heroSectionFirst from "../../../JsonFiles/HeroSectionFirst.json";
 
 const HeroFirst = () => {
   return (
@@ -18,7 +19,7 @@ const HeroFirst = () => {
               marginBottom: "4px",
             }}
           >
-            50% OFF Summer Super Sale
+            {heroSectionFirst[0].heroTitle}
           </p>
           <p
             style={{
@@ -30,7 +31,7 @@ const HeroFirst = () => {
               marginBottom: "28px",
             }}
           >
-            Elevate Your Shopping Experience Today !
+            {heroSectionFirst[0].heroHeading}
           </p>
         </div>
 
@@ -46,9 +47,7 @@ const HeroFirst = () => {
                 // marginRight: "659px",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              {heroSectionFirst[0].heroDescription}
             </p>
             <button className="heroFirstButton"> Explore Now</button>
           </div>
@@ -68,7 +67,12 @@ const HeroFirst = () => {
                 </p>
               </div>
               <div className="heroFirstLeftCenter">
-                <img src={Shoes_icon} alt="" />
+                {/* <img  src={Shoes_icon} alt="" /> */}
+                <img
+                  key={heroSectionFirst[1].herofirstimages[0]}
+                  src={heroSectionFirst[1].herofirstimages[0].src}
+                  alt=""
+                />
               </div>
               <div className="heroFirstLeftBottom">
                 <button
@@ -89,14 +93,19 @@ const HeroFirst = () => {
                       padding: "0",
                       cursor: "pointer",
                     }}
-                    src={Like_icon}
+                    key={heroSectionFirst[1].herofirstimages[2]}
+                    src={heroSectionFirst[1].herofirstimages[2].src}
                   />
                 </button>
               </div>
             </div>
             <div className="heroFirstRight">
               <div className="heroFirstRightTop">
-                <img src={Jacket_icon} alt="" />
+                <img
+                  key={heroSectionFirst[1].herofirstimages[1]}
+                  src={heroSectionFirst[1].herofirstimages[1].src}
+                  alt=""
+                />
               </div>
               <div className="heroFirstRightBottom">
                 <button
@@ -117,7 +126,8 @@ const HeroFirst = () => {
                       padding: "0",
                       cursor: "pointer",
                     }}
-                    src={Like_icon}
+                    key={heroSectionFirst[1].herofirstimages[2]}
+                    src={heroSectionFirst[1].herofirstimages[2].src}
                   />
                 </button>
 

@@ -1,0 +1,23 @@
+[
+  {
+    "heroTitle": "50% OFF Summer Super Sale",
+    "heroHeading": "Elevate Your Shopping Experience Today !",
+    "heroDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "herofirstimages": [
+      {
+        "id": "1",
+        "src": "./Images/shoes.png"
+      },
+      {
+        "id": "2",
+        "src": "../Images/Jacket.png"
+      },
+      {
+        "id": "3",
+        "src": "../Images/thumb_up.png"
+      }
+    ]
+  }
+]

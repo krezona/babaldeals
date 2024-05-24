@@ -1,40 +1,11 @@
 import React from "react";
 import "./HeroThird.css";
-import New_Arrival_1 from "../../../Images/new_arrival_1.png";
-import New_Arrival_2 from "../../../Images/new_arrival_2.png";
-import New_Arrival_3 from "../../../Images/new_arrival_3.png";
-import New_Arrival_4 from "../../../Images/new_arrival_4.png";
-import New_Arrival_5 from "../../../Images/Hoody.png";
+
 import { Link } from "react-router-dom";
+import heroSectionSeconddata from "../../../JsonFiles/HeroSectionSecond.json";
 
 const HeroThird = () => {
-  const Images = [
-    {
-      id: 1,
-      url: New_Arrival_1,
-      title: "Watch",
-    },
-    {
-      id: 2,
-      url: New_Arrival_2,
-      title: "School Bag",
-    },
-    {
-      id: 3,
-      url: New_Arrival_3,
-      title: "Airpods",
-    },
-    {
-      id: 4,
-      url: New_Arrival_4,
-      title: "Vape",
-    },
-    {
-      id: 5,
-      url: New_Arrival_5,
-      title: "Hoodie",
-    },
-  ];
+  const Images = heroSectionSeconddata.heroSecondImages.slice(0, 5);
 
   return (
     <div className="container">
@@ -51,7 +22,11 @@ const HeroThird = () => {
         </p>
         <div className="heroThirdCarousel">
           {Images.map((Image) => (
-            <Link  key={Image.id} to="/productdetails">
+            <Link
+              key={Image.id}
+              to="/productdetails"
+              style={{ textDecoration: "none" }}
+            >
               <div key={Image.id} className="heroThirdImageContainer">
                 <img src={Image.url} className="heroThirdImage" />
                 <p

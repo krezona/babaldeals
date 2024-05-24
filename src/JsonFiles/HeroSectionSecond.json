@@ -1,0 +1,66 @@
+  {
+    "heroSecondText":
+      {
+        "heroTitle": "New Arrivals",
+        "heroDescription": "Lorem Ipsum is simply dummy text of the printing and type setting industry."
+      }
+    ,
+    "heroSecondImages": [
+      {
+        "id": "1",
+        "url": "./Images/new_arrival_1.png",
+        "title": "Watch",
+        "price": "Rs 999",
+        "pastprice": "RS 1999"
+      },
+      {
+        "id": "2",
+        "url": "./Images/new_arrival_2.png",
+        "title": "School Bag",
+        "price": "Rs 4999",
+        "pastprice": "RS 6880"
+      },
+      {
+        "id": "3",
+        "url": "./Images/new_arrival_3.png",
+        "title": "Airpods",
+        "price": "Rs 4000",
+        "pastprice": "RS 8000"
+      },
+      {
+        "id": "4",
+        "url": "./Images/new_arrival_4.png",
+        "title": "Vape",
+        "price": "Rs 4999",
+        "pastprice": "RS 6890"
+      },
+      {
+        "id": "5",
+        "url": "./Images/New_Arrival_5.png",
+        "title": "Purse",
+        "price": "Rs 999",
+        "pastprice": "RS 1999"
+      },
+      {
+        "id": "6",
+        "url": "./Images/New_Arrival_6.png",
+        "title": "T-Shirt",
+        "price": "Rs 999",
+        "pastprice": "RS 1999"
+      },
+      {
+        "id": "7",
+        "url": "./Images/New_Arrival_7.png",
+        "title": "Shoes",
+        "price": "Rs 2000",
+        "pastprice": "RS 2500"
+      },
+      {
+        "id": "8",
+        "url": "./Images/New_Arrival_8.png",
+        "title": "Jacket",
+        "price": "Rs 4000",
+        "pastprice": "Rs 8000"
+      }
+    ]
+  }
